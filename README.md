@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 
 # 1.Add atleast 3 project features 
 ans : 
-+a. User Authentication: Implement user authentication and registration functionality. Allow users to create accounts, log in, and log out.
+* a. User Authentication: Implement user authentication and registration functionality. Allow users to create accounts, log in, and log out.
      + b. Search and Filter: Add a search bar and filters to help users find courses more easily. Users can search for courses by keywords or filter them by criteria such as 
          price, credit hours, or subject.
      + c. Course Details Page: Create a dedicated course details page that provides more information about each course when a user clicks on a course card.   
