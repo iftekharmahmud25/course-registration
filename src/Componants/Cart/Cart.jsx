@@ -1,15 +1,13 @@
 import Home from "../Home";
 
-const Cart = ({ selectedCourse, totalCredits }) => {
+const Cart = ({ selectedCourse, totalCredits, totalPrice }) => {
 
     const remainingCredits = 20 - totalCredits;
 
     return (
         <div>
             <div className="w-[100%]  p-3 shadow-md shadow-slate-300">
-                <p className="text-sm font-bold text-blue-500">Credit Hour Remaining  
-                
-                {remainingCredits} hr</p>
+                <p className="text-sm font-bold text-blue-500">Credit Hour Remaining : {remainingCredits} hr</p>
                 <hr className="my-4" />
                 <p className="text-base font-bold">Course Name</p>
                 <ol>
@@ -22,7 +20,7 @@ const Cart = ({ selectedCourse, totalCredits }) => {
                 <hr className="my-4" />
                 <p className="text-sm font-semibold mb-4">Total Credit Hour : {totalCredits}</p>
                 <hr className="my-4" />
-                <p className="text-sm font-semibold mb-4">Total Price : USD</p>
+                <p className="text-sm font-semibold mb-4">Total Price : {totalPrice} USD</p>
 
             </div>
         </div>

@@ -9,6 +9,7 @@ const Home = () => {
     const [courses, setCourses] = useState([])
     const [totalCredits, setTotalCredits] = useState(0);
     const [selectedCourse, setSelectedCourse] = useState([])
+    const [totalPrice,setTotalPrice] = useState(0)
 
 
     useEffect(() => {
@@ -18,13 +19,14 @@ const Home = () => {
     }, [])
     console.log(courses)
     const handleSelectCourse = (course) => {
+        
         if(totalCredits + course.credit >20){
           return  alert('You can not add more then 20 credit')
         }
         else{
             setSelectedCourse([...selectedCourse, course])
             setTotalCredits(totalCredits + course.credit);
-            
+            setTotalPrice(totalPrice + course.price)
         }
         
         
@@ -33,10 +35,10 @@ const Home = () => {
 
     return (
         <div>
-            <div className="flex justify-between gap-8 w-[88%] mx-auto py-20">
-                <div className="grid md:grid-cols-3 gap-4 grid-cols-1 w-[75%] ">
+            <div className="md:flex  justify-between gap-8 md:w-[95%] w-[80%] lg:w-[88%] mx-auto py-20">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 grid-cols-1 md:w-[75%] ">
                     {courses.map((course) => (
-                        <div className="h-[320px] shadow-md shadow-slate-400  
+                        <div className="md:h-[320px] h-[360px] shadow-md shadow-slate-400  
                             text-start" key={course.id}>
                             <img className="w-full rounded-none p-3" src={course.image} alt="" />
                             <p className="ps-3 font-bold mb-3">{course.title}</p>
@@ -56,8 +58,8 @@ const Home = () => {
                     )
                     )}
                 </div>
-                <div className="w-[25%]">
-                    <Cart selectedCourse={selectedCourse}  totalCredits={totalCredits}></Cart>
+                <div className="md:w-[25%] md:mt-0 mt-10">
+                    <Cart selectedCourse={selectedCourse} totalPrice={totalPrice} totalCredits={totalCredits}></Cart>
 
                 </div>
             </div>
