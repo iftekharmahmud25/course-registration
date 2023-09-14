@@ -10,16 +10,15 @@ Currently, two official plugins are available:
 
 # 1.Add atleast 3 project features 
 ans : 
-* a. User Authentication: Implement user authentication and registration functionality. Allow users to create accounts, log in, and log out.
-     + b. Search and Filter: Add a search bar and filters to help users find courses more easily. Users can search for courses by keywords or filter them by criteria such as 
-         price, credit hours, or subject.
-     + c. Course Details Page: Create a dedicated course details page that provides more information about each course when a user clicks on a course card.   
+*  User Authentication: Implement user authentication and registration functionality. Allow users to create accounts, log in, and log out.
+   * Search and Filter: Add a search bar and filters to help users find courses more easily. Users can search for courses by keywords or filter them by criteria such as price, credit hours, or subject.
+   * Course Details Page: Create a dedicated course details page that provides more information about each course when a user clicks on a course card.   
 
 # 2. Discuss how you managed the state in your assignment project ?
-   ans : +a . Initializing State Variables.
-        + b.  Fetching Data and Setting State.
-        +  c. Updating State on User Interaction.
-       +  d. Passing State as Props .
+   ans : * Initializing State Variables.
+        *  Fetching Data and Setting State.
+        *   Updating State on User Interaction.
+       * Passing State as Props .
          
 
    
