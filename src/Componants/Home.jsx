@@ -3,6 +3,10 @@ import { useEffect } from "react";
 import { FaDollarSign, FaBookOpen } from "react-icons/fa";
 import Cart from "./Cart/Cart";
 
+import { toast,ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Home = () => {
 
@@ -21,7 +25,7 @@ const Home = () => {
     const handleSelectCourse = (course) => {
         
         if(totalCredits + course.credit >20){
-          return  alert('You can not add more then 20 credit')
+          return   toast('You can not add more then 20 credit')
         }
         else{
             setSelectedCourse([...selectedCourse, course])
@@ -63,7 +67,8 @@ const Home = () => {
 
                 </div>
             </div>
-
+         
+            <ToastContainer /> 
         </div>
     );
 };
