@@ -27,7 +27,7 @@ const Home = () => {
       const isExists = selectedCourse.find(item => item.title === course.title)
           
       if(isExists){
-         return toast('you can not add more than one course')
+         return toast('you can not add one course twice')
       }
       
       else {
