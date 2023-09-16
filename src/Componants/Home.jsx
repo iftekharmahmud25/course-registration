@@ -24,14 +24,24 @@ const Home = () => {
     console.log(courses)
     const handleSelectCourse = (course) => {
         
+      const isExists = selectedCourse.find(item => item.title === course.title)
+          
+      if(isExists){
+         return toast('you can not add more than one course')
+      }
+      
+      else {
         if(totalCredits + course.credit >20){
-          return   toast('You can not add more then 20 credit')
-        }
-        else{
-            setSelectedCourse([...selectedCourse, course])
-            setTotalCredits(totalCredits + course.credit);
-            setTotalPrice(totalPrice + course.price)
-        }
+            return   toast('You can not add more then 20 credit')
+          }
+          else{
+              setSelectedCourse([...selectedCourse, course])
+              setTotalCredits(totalCredits + course.credit);
+              setTotalPrice(totalPrice + course.price)
+          }
+      }
+
+    
         
         
     }

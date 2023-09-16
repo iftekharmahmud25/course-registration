@@ -10,7 +10,7 @@
         "image": "https://i.ibb.co/GF6fFnc/Rectangle-2-3.png",
         "title": "Introduction to Algorithms",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "price": 25000,
+        "price": 20000,
         "credit": 2
     },
     {
@@ -24,7 +24,7 @@
         "image": "https://i.ibb.co/VWtCmyC/Rectangle-3.png",
         "title": "Basic Data Structures",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "price": 35000,
+        "price": 15000,
         "credit": 5
     },
     {
